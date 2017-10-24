@@ -1,5 +1,5 @@
 void setup() {
-  size(window.screen.width, window.screen.height-100);
+  size(400,400);
   //variables
   var playerX = 0;
   var playerY = 300;

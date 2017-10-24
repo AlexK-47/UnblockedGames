@@ -1,14 +1,12 @@
 void setup() {
-  //set size of window
-  size(400,400);
-  var loopSpeed = 2;
-  var x = 0;
-  var draw = function(){
-    rect(x,x,x,x);
+    var x = 0;
+}
+
+void draw() {
     x++;
-    //makes it infinite loop
-    setTimeout(draw,loopSpeed);
-  };
-  //start the infinte loop chain
-  draw();
+    rect(x,x,x,x);
+}
+
+void mousePressed() {
+    
 }

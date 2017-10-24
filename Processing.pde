@@ -10,6 +10,7 @@ var blockStuff = [];
 var elements = [["Sand","Fall"],["Gravel","Fall"],["Stone","NoFall"],["Player","Control"],["Fire","Disapear"]];
 var idSelect = 0;
 var lag = 0;
+var mouseIsPressed = false;
 
 var estimateLag = function(){
     lag = blockStuff.length/9;
@@ -119,8 +120,9 @@ void draw() {
     text(elements[idSelect][0],10,10);
     estimateLag();
     Delay[1]++;
+    mouseIsPressed=false;
 }
 
 void mousePressed() {
-    
+    mouseIsPressed=true;
 }

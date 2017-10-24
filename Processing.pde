@@ -1,4 +1,5 @@
 void setup() {
+    size(400, 400); 
     var x = 0;
 }
 

@@ -1,21 +1,36 @@
 
-void setup()
+color fillVal = color(126);
 
-{
 
-  size(400, 400);
 
-  rectMode(CENTER_RADIUS);
+void draw() {
 
-  ellipseMode(CENTER_RADIUS);
+  fill(fillVal);
+
+  rect(25, 25, 50, 50);
 
 }
 
-var x = 0;
 
-void draw() {
-  background(100);
-  rect(x,10,10,10);
-  x++;
+
+void keyPressed() {
+
+  if (key == CODED) {
+
+    if (keyCode == UP) {
+
+      fillVal = 255;
+
+    } else if (keyCode == DOWN) {
+
+      fillVal = 0;
+
+    } 
+
+  } else {
+
+    fillVal = 126;
+
+  }
 
 }
